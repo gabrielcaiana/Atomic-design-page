@@ -1,17 +1,19 @@
 <template>
 <div class="app">
-  <Logo />
+  <NavBar />
+  <SearchForm />
 </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Logo } from '@/components/atoms'
+import { NavBar, SearchForm } from '@/components/molecules'
 
 export default defineComponent({
   name: "App",
   components: {
-    Logo
+    NavBar,
+    SearchForm
   }
 });
 </script>
