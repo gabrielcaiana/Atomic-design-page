@@ -1,31 +1,17 @@
 <template>
-  <div class="app">
-    <Container>
-      <Header />
-      <Presentation />
-      <Services />
-    </Container>
-  </div>
+ <HomeTemplate />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { Container } from '@/components/bosons';
-import { Header, Presentation, Services } from '@/components/organisms';
+import { HomeTemplate } from '@/components/templates'
+
 
 export default defineComponent({
   name: 'App',
   components: {
-    Container,
-    Header,
-    Presentation,
-    Services,
+    HomeTemplate
   },
 });
 </script>
 
-<style lang="scss" scoped>
-.app {
-  padding: 2rem;
-}
-</style>
